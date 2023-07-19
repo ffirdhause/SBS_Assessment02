@@ -1,0 +1,114 @@
+[
+  {
+      "label": "Wed, 19th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689714000,
+      "endTime": 1689721200,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689721892"
+      }
+  },
+  {
+      "label": "Tue, 18th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689627600,
+      "endTime": 1689634800,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Tuesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689635487"
+      }
+  },
+  {
+      "label": "Mon, 17th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689541200,
+      "endTime": 1689548400,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Monday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689549451"
+      }
+  },
+  {
+      "label": "Sun, 16th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689454800,
+      "endTime": 1689462000,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Sunday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689462747"
+      }
+  },
+  {
+      "label": "Sat, 15th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689368400,
+      "endTime": 1689375600,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Saturday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689376737"
+      }
+  },
+  {
+      "label": "Fri, 14th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689282000,
+      "endTime": 1689289200,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Friday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689290241"
+      }
+  },
+  {
+      "label": "Thu, 13th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689195600,
+      "endTime": 1689202800,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Thursday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689203485"
+      }
+  },
+  {
+      "label": "Wed, 12th Jul",
+      "program": "Mandarin",
+      "channelName": "SBSRadio1",
+      "startTime": 1689109200,
+      "endTime": 1689116400,
+      "onDigitalRadio": true,
+      "analogueFrequency": "1107am",
+      "archiveAudio": {
+          "mp3": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892",
+          "m4a": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892",
+          "flv": "https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689721892"
+      }
+  }
+]

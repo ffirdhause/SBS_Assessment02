@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.WeatherBit</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-20 04:47:55 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Current weather data for a specific location based on lat and long.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/WeatherBit.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Weather bit tests.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Current weather data for a specific location based on lat and long.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1866</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>def funtion = call read(&#39;classpath:operations/GETWeatherData.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1817</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">operations.GETWeatherData</div>
+      </div>
+      <div class="time-cell passed">1788</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;current&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lat = &#39;60&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lon = &#39;120&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = &#39;f3faf846000d4f9a83a6d656c797c268&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1783</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.0.call.0.12">16:47:54.028 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268
+1 &gt; Host: api.weatherbit.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:47:55.379 response time in milliseconds: 1346
+1 &lt; 200
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Date: Fri, 20 Aug 2021 06:47:54 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 986
+1 &lt; X-RateLimit-Reset: 1629503999
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268
+{&quot;data&quot;:[{&quot;rh&quot;:92.5625,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:120,&quot;pres&quot;:967.5,&quot;timezone&quot;:&quot;Asia\/Yakutsk&quot;,&quot;ob_time&quot;:&quot;2021-08-20 06:32&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1629441174,&quot;solar_rad&quot;:58.8,&quot;state_code&quot;:&quot;63&quot;,&quot;city_name&quot;:&quot;Olyokminsk&quot;,&quot;wind_spd&quot;:2.76665,&quot;wind_cdir_full&quot;:&quot;north-northeast&quot;,&quot;wind_cdir&quot;:&quot;NNE&quot;,&quot;slp&quot;:1002,&quot;vis&quot;:24,&quot;h_angle&quot;:22.5,&quot;sunset&quot;:&quot;12:14&quot;,&quot;dni&quot;:815.78,&quot;dewpt&quot;:13,&quot;snow&quot;:0,&quot;uv&quot;:1.96488,&quot;precip&quot;:0,&quot;wind_dir&quot;:13,&quot;sunrise&quot;:&quot;20:40&quot;,&quot;ghi&quot;:587.76,&quot;dhi&quot;:100.55,&quot;aqi&quot;:16,&quot;lat&quot;:60,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:804,&quot;description&quot;:&quot;Overcast Clouds&quot;},&quot;datetime&quot;:&quot;2021-08-20:06&quot;,&quot;temp&quot;:14.2,&quot;station&quot;:&quot;UERR&quot;,&quot;elev_angle&quot;:37.23,&quot;app_temp&quot;:14.2}],&quot;count&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def respRead = function.response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">48</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:47:55.513 src/test/java/tests/WeatherBit.feature:11
+And def respRead = function.response
+js failed:
+&gt;&gt;&gt;&gt;
+01: function.response
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:8 Expected ( but found .
+function.response
+        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2205)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2124)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1316)
+
+src/test/java/tests/WeatherBit.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print respRead</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

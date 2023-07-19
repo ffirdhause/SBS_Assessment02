@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.WeatherBit</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-20 05:16:04 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Current weather data for a specific location based on lat and long.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/WeatherBit.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Weather bit tests.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Current weather data for a specific location based on lat and long.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2131</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>def weatherData = callonce read(&#39;classpath:operations/GETWeatherData.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2131</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">17:16:04.767 src/test/java/tests/WeatherBit.feature:10
+When def weatherData = callonce read(&#39;classpath:operations/GETWeatherData.feature&#39;)
+status code was: 200, expected: 201, response time in milliseconds: 1427, url: https://api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268, response: 
+{&quot;data&quot;:[{&quot;rh&quot;:91.1875,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:120,&quot;pres&quot;:968,&quot;timezone&quot;:&quot;Asia\/Yakutsk&quot;,&quot;ob_time&quot;:&quot;2021-08-20 06:58&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1629442682,&quot;solar_rad&quot;:50,&quot;state_code&quot;:&quot;63&quot;,&quot;city_name&quot;:&quot;Olyokminsk&quot;,&quot;wind_spd&quot;:2.43472,&quot;wind_cdir_full&quot;:&quot;north-northeast&quot;,&quot;wind_cdir&quot;:&quot;NNE&quot;,&quot;slp&quot;:1003,&quot;vis&quot;:24,&quot;h_angle&quot;:22.5,&quot;sunset&quot;:&quot;12:14&quot;,&quot;dni&quot;:779.54,&quot;dewpt&quot;:13,&quot;snow&quot;:0,&quot;uv&quot;:1.72586,&quot;precip&quot;:0,&quot;wind_dir&quot;:21,&quot;sunrise&quot;:&quot;20:40&quot;,&quot;ghi&quot;:500.15,&quot;dhi&quot;:94.18,&quot;aqi&quot;:13,&quot;lat&quot;:60,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:804,&quot;description&quot;:&quot;Overcast Clouds&quot;},&quot;datetime&quot;:&quot;2021-08-20:06&quot;,&quot;temp&quot;:14.5,&quot;station&quot;:&quot;UERR&quot;,&quot;elev_angle&quot;:31.93,&quot;app_temp&quot;:14.5}],&quot;count&quot;:1}
+
+classpath:operations/GETWeatherData.feature:12
+src/test/java/tests/WeatherBit.feature:10
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">operations.GETWeatherData</div>
+      </div>
+      <div class="time-cell passed">2088</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.0.call.0.6">17:16:02.658 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:operations/GETWeatherData.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;current&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lat = &#39;60&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lon = &#39;120&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = &#39;f3faf846000d4f9a83a6d656c797c268&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2079</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.0.call.0.11">17:16:03.251 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268
+1 &gt; Host: api.weatherbit.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:16:04.683 response time in milliseconds: 1427
+1 &lt; 200
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Date: Fri, 20 Aug 2021 07:16:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 980
+1 &lt; X-RateLimit-Reset: 1629503999
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268
+{&quot;data&quot;:[{&quot;rh&quot;:91.1875,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:120,&quot;pres&quot;:968,&quot;timezone&quot;:&quot;Asia\/Yakutsk&quot;,&quot;ob_time&quot;:&quot;2021-08-20 06:58&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1629442682,&quot;solar_rad&quot;:50,&quot;state_code&quot;:&quot;63&quot;,&quot;city_name&quot;:&quot;Olyokminsk&quot;,&quot;wind_spd&quot;:2.43472,&quot;wind_cdir_full&quot;:&quot;north-northeast&quot;,&quot;wind_cdir&quot;:&quot;NNE&quot;,&quot;slp&quot;:1003,&quot;vis&quot;:24,&quot;h_angle&quot;:22.5,&quot;sunset&quot;:&quot;12:14&quot;,&quot;dni&quot;:779.54,&quot;dewpt&quot;:13,&quot;snow&quot;:0,&quot;uv&quot;:1.72586,&quot;precip&quot;:0,&quot;wind_dir&quot;:21,&quot;sunrise&quot;:&quot;20:40&quot;,&quot;ghi&quot;:500.15,&quot;dhi&quot;:94.18,&quot;aqi&quot;:13,&quot;lat&quot;:60,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:804,&quot;description&quot;:&quot;Overcast Clouds&quot;},&quot;datetime&quot;:&quot;2021-08-20:06&quot;,&quot;temp&quot;:14.5,&quot;station&quot;:&quot;UERR&quot;,&quot;elev_angle&quot;:31.93,&quot;app_temp&quot;:14.5}],&quot;count&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.12">
+      <div class="step-ref failed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.0.call.0.12">17:16:04.764 classpath:operations/GETWeatherData.feature:12
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 1427, url: https://api.weatherbit.io/v2.0/current?lon=120&amp;lat=60&amp;key=f3faf846000d4f9a83a6d656c797c268, response: 
+{&quot;data&quot;:[{&quot;rh&quot;:91.1875,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:120,&quot;pres&quot;:968,&quot;timezone&quot;:&quot;Asia\/Yakutsk&quot;,&quot;ob_time&quot;:&quot;2021-08-20 06:58&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1629442682,&quot;solar_rad&quot;:50,&quot;state_code&quot;:&quot;63&quot;,&quot;city_name&quot;:&quot;Olyokminsk&quot;,&quot;wind_spd&quot;:2.43472,&quot;wind_cdir_full&quot;:&quot;north-northeast&quot;,&quot;wind_cdir&quot;:&quot;NNE&quot;,&quot;slp&quot;:1003,&quot;vis&quot;:24,&quot;h_angle&quot;:22.5,&quot;sunset&quot;:&quot;12:14&quot;,&quot;dni&quot;:779.54,&quot;dewpt&quot;:13,&quot;snow&quot;:0,&quot;uv&quot;:1.72586,&quot;precip&quot;:0,&quot;wind_dir&quot;:21,&quot;sunrise&quot;:&quot;20:40&quot;,&quot;ghi&quot;:500.15,&quot;dhi&quot;:94.18,&quot;aqi&quot;:13,&quot;lat&quot;:60,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:804,&quot;description&quot;:&quot;Overcast Clouds&quot;},&quot;datetime&quot;:&quot;2021-08-20:06&quot;,&quot;temp&quot;:14.5,&quot;station&quot;:&quot;UERR&quot;,&quot;elev_angle&quot;:31.93,&quot;app_temp&quot;:14.5}],&quot;count&quot;:1}
+
+classpath:operations/GETWeatherData.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def respRead = weatherData.response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print respRead</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

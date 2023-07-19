@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>tests.RetrieveAudioFiles</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-07-19 10:12:11 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get list of all archived audio files.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tests/RetrieveAudioFiles.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Retreive list of Audio Files.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get list of all archived audio files.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>589</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>def programData = callonce read(&#39;classpath:operations/GETmp3files.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">550</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:12:11.471 &lt;&lt; lock released, cached callonce: read(&#39;classpath:operations/GETmp3files.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">operations.GETmp3files</div>
+      </div>
+      <div class="time-cell passed">528</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">22:12:10.931 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:operations/GETmp3files.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;guide/ajax_radio_program_catchup_data/language/mandarin/location/NSW/sublocation/Sydney&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">526</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.6">22:12:11.230 request:
+1 &gt; GET https://www.sbs.com.au/guide/ajax_radio_program_catchup_data/language/mandarin/location/NSW/sublocation/Sydney
+1 &gt; Host: www.sbs.com.au
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_371)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:12:11.441 response time in milliseconds: 208
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; ETag: &quot;1689768318-0&quot;
+1 &lt; Content-Language: en
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Last-Modified: Wed, 19 Jul 2023 12:05:18 GMT
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; Cache-Control: public, max-age=175
+1 &lt; Expires: Wed, 19 Jul 2023 12:15:06 GMT
+1 &lt; Date: Wed, 19 Jul 2023 12:12:11 GMT
+1 &lt; Connection: keep-alive
+[{&quot;label&quot;:&quot;Wed, 19th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689714000,&quot;endTime&quot;:1689721200,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689721892&quot;}},{&quot;label&quot;:&quot;Tue, 18th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689627600,&quot;endTime&quot;:1689634800,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Tuesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689635487&quot;}},{&quot;label&quot;:&quot;Mon, 17th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689541200,&quot;endTime&quot;:1689548400,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Monday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689549451&quot;}},{&quot;label&quot;:&quot;Sun, 16th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689454800,&quot;endTime&quot;:1689462000,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Sunday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689462747&quot;}},{&quot;label&quot;:&quot;Sat, 15th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689368400,&quot;endTime&quot;:1689375600,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Saturday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689376737&quot;}},{&quot;label&quot;:&quot;Fri, 14th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689282000,&quot;endTime&quot;:1689289200,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Friday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689290241&quot;}},{&quot;label&quot;:&quot;Thu, 13th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689195600,&quot;endTime&quot;:1689202800,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Thursday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689203485&quot;}},{&quot;label&quot;:&quot;Wed, 12th Jul&quot;,&quot;program&quot;:&quot;Mandarin&quot;,&quot;channelName&quot;:&quot;SBSRadio1&quot;,&quot;startTime&quot;:1689109200,&quot;endTime&quot;:1689116400,&quot;onDigitalRadio&quot;:true,&quot;analogueFrequency&quot;:&quot;1107am&quot;,&quot;archiveAudio&quot;:{&quot;mp3&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,&quot;m4a&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,&quot;flv&quot;:&quot;https:\/\/media.sbs.com.au\/ondemand\/audio\/Wednesday_ONDemand_SBS_RADIO1_07_00.flv?mtime=1689721892&quot;}}]
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = programData.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def archiveMP3Files = $actualResponse[*].archiveAudio.mp3</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print archiveMP3Files</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">22:12:11.496 [print] [
+  &quot;https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def expectedResponse = read(&#39;classpath:testResource/ProgramDataResponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def expectedMP3Files = $expectedResponse[*].archiveAudio.mp3</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print expectedMP3Files</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:12:11.503 [print] [
+  &quot;https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Tuesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689635487&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Monday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689549451&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Sunday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689462747&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Saturday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689376737&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Friday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689290241&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Thursday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689203485&quot;,
+  &quot;https://media.sbs.com.au/ondemand/audio/Wednesday_ONDemand_SBS_RADIO1_07_00.mp3?mtime=1689721892&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match archiveMP3Files == expectedMP3Files</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

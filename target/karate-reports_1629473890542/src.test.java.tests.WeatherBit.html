@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.WeatherBit</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-21 01:12:29 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Current weather data for a specific location based on lat and long.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:18]"><span>[3:18]</span> <span>Current Air quality data for particular Postcode.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/WeatherBit.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Weather bit tests.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Current weather data for a specific location based on lat and long.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1735</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>def weatherData = callonce read(&#39;classpath:operations/GETWeatherData.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1659</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">01:12:27.986 &lt;&lt; lock released, cached callonce: read(&#39;classpath:operations/GETWeatherData.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">operations.GETWeatherData</div>
+      </div>
+      <div class="time-cell passed">1633</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">01:12:26.340 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:operations/GETWeatherData.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;current&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lat = &#39;33.51&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param lon = &#39;151.2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = &#39;f3faf846000d4f9a83a6d656c797c268&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1624</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.9">01:12:26.702 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lon=151.2&amp;lat=33.51&amp;key=f3faf846000d4f9a83a6d656c797c268
+1 &gt; Host: api.weatherbit.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:12:27.934 response time in milliseconds: 1230
+1 &lt; 200
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Date: Fri, 20 Aug 2021 15:12:26 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 942
+1 &lt; X-RateLimit-Reset: 1629503999
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lon=151.2&amp;lat=33.51&amp;key=f3faf846000d4f9a83a6d656c797c268
+{&quot;data&quot;:[{&quot;rh&quot;:73.25,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:151.2,&quot;pres&quot;:1018,&quot;timezone&quot;:&quot;Asia\/Tokyo&quot;,&quot;ob_time&quot;:&quot;2021-08-20 14:57&quot;,&quot;country_code&quot;:&quot;JP&quot;,&quot;clouds&quot;:0,&quot;ts&quot;:1629471447,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;04&quot;,&quot;city_name&quot;:&quot;Hasaki&quot;,&quot;wind_spd&quot;:1.64354,&quot;wind_cdir_full&quot;:&quot;west&quot;,&quot;wind_cdir&quot;:&quot;W&quot;,&quot;slp&quot;:1018,&quot;vis&quot;:24,&quot;h_angle&quot;:-90,&quot;sunset&quot;:&quot;09:21&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:19.7,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0,&quot;wind_dir&quot;:266,&quot;sunrise&quot;:&quot;19:56&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:19,&quot;lat&quot;:33.51,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:800,&quot;description&quot;:&quot;Clear sky&quot;},&quot;datetime&quot;:&quot;2021-08-20:15&quot;,&quot;temp&quot;:24.8,&quot;station&quot;:&quot;AU748&quot;,&quot;elev_angle&quot;:-49.46,&quot;app_temp&quot;:25.2}],&quot;count&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = weatherData.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def location = actualResponse.data[0].timezone</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def expectedResponse = read(&#39;classpath:testResource/WeatherDataResponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match location == expectedResponse.data[0].timezone</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;Current weather data of &quot; +location ,actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">01:12:28.063 [print] Current weather data of Asia/Tokyo {
+  &quot;data&quot;: [
+    {
+      &quot;rh&quot;: 73.25,
+      &quot;pod&quot;: &quot;n&quot;,
+      &quot;lon&quot;: 151.2,
+      &quot;pres&quot;: 1018,
+      &quot;timezone&quot;: &quot;Asia/Tokyo&quot;,
+      &quot;ob_time&quot;: &quot;2021-08-20 14:57&quot;,
+      &quot;country_code&quot;: &quot;JP&quot;,
+      &quot;clouds&quot;: 0,
+      &quot;ts&quot;: 1629471447,
+      &quot;solar_rad&quot;: 0,
+      &quot;state_code&quot;: &quot;04&quot;,
+      &quot;city_name&quot;: &quot;Hasaki&quot;,
+      &quot;wind_spd&quot;: 1.64354,
+      &quot;wind_cdir_full&quot;: &quot;west&quot;,
+      &quot;wind_cdir&quot;: &quot;W&quot;,
+      &quot;slp&quot;: 1018,
+      &quot;vis&quot;: 24,
+      &quot;h_angle&quot;: -90,
+      &quot;sunset&quot;: &quot;09:21&quot;,
+      &quot;dni&quot;: 0,
+      &quot;dewpt&quot;: 19.7,
+      &quot;snow&quot;: 0,
+      &quot;uv&quot;: 0,
+      &quot;precip&quot;: 0,
+      &quot;wind_dir&quot;: 266,
+      &quot;sunrise&quot;: &quot;19:56&quot;,
+      &quot;ghi&quot;: 0,
+      &quot;dhi&quot;: 0,
+      &quot;aqi&quot;: 19,
+      &quot;lat&quot;: 33.51,
+      &quot;weather&quot;: {
+        &quot;icon&quot;: &quot;c01n&quot;,
+        &quot;code&quot;: 800,
+        &quot;description&quot;: &quot;Clear sky&quot;
+      },
+      &quot;datetime&quot;: &quot;2021-08-20:15&quot;,
+      &quot;temp&quot;: 24.8,
+      &quot;station&quot;: &quot;AU748&quot;,
+      &quot;elev_angle&quot;: -49.46,
+      &quot;app_temp&quot;: 25.2
+    }
+  ],
+  &quot;count&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:18]</span>
+                <span class="scenario-name">Current Air quality data for particular Postcode.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>964</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>def airQualityrData = callonce read(&#39;classpath:operations/GETAirQualityData.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">959</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">01:12:29.028 &lt;&lt; lock released, cached callonce: read(&#39;classpath:operations/GETAirQualityData.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.19.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">operations.GETAirQualityData</div>
+      </div>
+      <div class="time-cell passed">946</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19.0.call.0.4">01:12:28.077 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:operations/GETAirQualityData.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;current/airquality&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param postal_code = &#39;15238&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = &#39;f3faf846000d4f9a83a6d656c797c268&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">945</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19.0.call.0.8">01:12:28.085 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current/airquality?postal_code=15238&amp;key=f3faf846000d4f9a83a6d656c797c268
+1 &gt; Host: api.weatherbit.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:12:29.028 response time in milliseconds: 942
+1 &lt; 200
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Date: Fri, 20 Aug 2021 15:12:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 941
+1 &lt; X-RateLimit-Reset: 1629503999
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+{&quot;data&quot;:[{&quot;mold_level&quot;:0,&quot;aqi&quot;:34,&quot;pm10&quot;:10.7393,&quot;co&quot;:423.074,&quot;o3&quot;:47.7143,&quot;predominant_pollen_type&quot;:&quot;Trees&quot;,&quot;so2&quot;:1.885,&quot;pollen_level_tree&quot;:1,&quot;pollen_level_weed&quot;:1,&quot;no2&quot;:1.75647,&quot;pm25&quot;:8.05445,&quot;pollen_level_grass&quot;:1}],&quot;city_name&quot;:&quot;Allegheny&quot;,&quot;lon&quot;:&quot;-79.8805&quot;,&quot;timezone&quot;:&quot;America\/New_York&quot;,&quot;lat&quot;:&quot;40.5346&quot;,&quot;country_code&quot;:&quot;US&quot;,&quot;state_code&quot;:&quot;PA&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = airQualityrData.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def cityName = actualResponse.city_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def expectedResponse = read(&#39;classpath:testResource/AirQualityResponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match cityName == expectedResponse.city_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;Air Quality data of &quot; +cityName, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">01:12:29.034 [print] Air Quality data of Allegheny {
+  &quot;data&quot;: [
+    {
+      &quot;mold_level&quot;: 0,
+      &quot;aqi&quot;: 34,
+      &quot;pm10&quot;: 10.7393,
+      &quot;co&quot;: 423.074,
+      &quot;o3&quot;: 47.7143,
+      &quot;predominant_pollen_type&quot;: &quot;Trees&quot;,
+      &quot;so2&quot;: 1.885,
+      &quot;pollen_level_tree&quot;: 1,
+      &quot;pollen_level_weed&quot;: 1,
+      &quot;no2&quot;: 1.75647,
+      &quot;pm25&quot;: 8.05445,
+      &quot;pollen_level_grass&quot;: 1
+    }
+  ],
+  &quot;city_name&quot;: &quot;Allegheny&quot;,
+  &quot;lon&quot;: &quot;-79.8805&quot;,
+  &quot;timezone&quot;: &quot;America/New_York&quot;,
+  &quot;lat&quot;: &quot;40.5346&quot;,
+  &quot;country_code&quot;: &quot;US&quot;,
+  &quot;state_code&quot;: &quot;PA&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
